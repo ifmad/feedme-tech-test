@@ -1,5 +1,6 @@
 const net = require('net');
 const promiseRetry = require('promise-retry');
+const converter = require('./converter');
 
 const provider = {
     host: 'provider',
@@ -16,6 +17,6 @@ promiseRetry((retry, number)=> {
         .catch(retry);
 })
 
-client.on('data', (data) => console.log('data: ' + data));
+client.on('data', data => console.log(converter.convert(data)));
 
 client.on('close', () => console.error('Connection closed.'));
