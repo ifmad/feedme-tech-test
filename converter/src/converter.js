@@ -46,4 +46,4 @@ const convert = function convert(data) {
         .filter(Boolean);
 }
 
-module.exports = { convert }
+module.exports = { convert };

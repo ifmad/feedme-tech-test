@@ -3,7 +3,8 @@
     "start": "node src/server.js"
   },
   "dependencies": {
-    "net": "^1.0.2",
-    "promise-retry": "^1.1.1"
+    "bluebird": "^3.5.3",
+    "mongodb": "^3.1.10",
+    "net": "^1.0.2"
   }
 }

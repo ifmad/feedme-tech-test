@@ -1,9 +1,10 @@
 version: '2'
 services:
-  #mongo:
-  #  image: mongo
-  #  ports:
-  #    - "27017:27017"
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    command: mongod --bind_ip_all
 
   #zookeeper:
   #  image: wurstmeister/zookeeper
